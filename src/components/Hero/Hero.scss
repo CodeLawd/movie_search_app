@@ -4,25 +4,33 @@
   background-repeat: no-repeat;
   height: 550px;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 77px;
 
+  // padding-left: 77px;
   .hero__title {
     font-size: 4.5rem;
     color: var(--primary-color);
     line-height: 5.86rem;
     font-weight: 700;
-    width: 29.375rem;
-    padding: 109px 77px;
     display: inline-block;
   }
 
   @media screen and (max-width: 834px) {
     text-align: center !important;
+    justify-content: center;
+
+    .hero__title {
+      font-size: 4rem;
+    }
   }
 
   @media screen and (max-width: 321px) {
     .hero__title {
-      font-size: 28px;
-      width: 290px;
+      font-size: 2rem;
+      // width: 290px;
       line-height: 1.86rem;
     }
   }

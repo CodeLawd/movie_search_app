@@ -44,6 +44,7 @@ const App = () => {
         </h3>
       )}
       {movies.length > 1 && <MovieContainer movies={movies} />}
+      <div style={{ height: "40px" }}></div>
       {movies.length > 1 && <MovieContainer movies={movies} />}
     </div>
   );

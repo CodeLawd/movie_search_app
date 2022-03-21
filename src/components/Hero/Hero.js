@@ -5,7 +5,9 @@ import "./Hero.scss";
 const Hero = () => {
   return (
     <div className="hero">
-      <span className="hero__title">Watch Something Incredible.</span>
+      <span className="hero__title">
+        Watch <br /> Something <br /> Incredible.
+      </span>
     </div>
   );
 };

@@ -20,6 +20,7 @@ const Search = ({ setSearchQuery, setMovies }) => {
           value={query}
           onChange={handleChange}
         />
+       
         <img
           src={SearchIcon}
           alt="search"
