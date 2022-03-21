@@ -9,7 +9,7 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState("die");
   const [loading, setLoading] = useState(false);
 
-  let cancel = false;
+  // let cancel = false;
 
   const fetchMovies = async (searchQuery) => {
     setLoading(true);
@@ -18,14 +18,14 @@ const App = () => {
     );
     const data = await res.json();
 
-    if (cancel) return;
+    // if (cancel) return;
     setMovies(data.Search);
     setLoading(false);
   };
 
   useEffect(() => {
     fetchMovies(searchQuery);
-    return () => (cancel = true);
+    // return () => (cancel = true);
   }, [searchQuery]);
 
   return (
