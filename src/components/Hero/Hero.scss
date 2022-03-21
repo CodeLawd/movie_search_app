@@ -1,0 +1,17 @@
+.hero {
+  background: url(../../images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100vw;
+
+  .hero__title {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+    line-height: 5.86rem;
+    font-weight: 700;
+    width: 490px;
+    padding: 109px 77px;
+    display: inline-block;
+  }
+}
