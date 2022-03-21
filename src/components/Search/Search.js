@@ -20,7 +20,13 @@ const Search = ({ setSearchQuery, setMovies }) => {
           value={query}
           onChange={handleChange}
         />
-       
+        {/* <button
+          onClick={() => {
+            query !== "" && setSearchQuery(query);
+          }}
+        >
+          Search
+        </button> */}
         <img
           src={SearchIcon}
           alt="search"

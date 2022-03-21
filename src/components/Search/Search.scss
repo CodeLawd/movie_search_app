@@ -11,19 +11,20 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    padding: 4px 0;
+    background: var(--default-color);
 
     .search__box-input {
       width: 100%;
       padding: 15px 20px;
       outline: none;
       border: none;
+      font-size: 1rem;
     }
 
     img {
       cursor: pointer;
       width: 30px;
-      margin-right: 10px;
+      margin: 0 10px;
     }
   }
 }
