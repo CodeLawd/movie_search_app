@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchIcon from "../../search-icon.svg";
 
 import "./Search.scss";
 
-const Search = ({ searchQuery, setSearchQuery, setMovies }) => {
+const Search = ({ setSearchQuery, setMovies }) => {
+  const [query, setQuery] = useState("");
+
   const handleChange = (e) => {
-    setSearchQuery(e.target.value);
+    setQuery(e.target.value);
   };
 
   return (
@@ -15,13 +17,15 @@ const Search = ({ searchQuery, setSearchQuery, setMovies }) => {
         <input
           name="searchQuery"
           className="search__box-input"
-          value={searchQuery}
+          value={query}
           onChange={handleChange}
         />
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => setSearchQuery(searchQuery)}
+          onClick={() => {
+            query !== "" && setSearchQuery(query);
+          }}
         />
       </div>
     </div>

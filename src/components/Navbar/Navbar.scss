@@ -1,19 +1,25 @@
 .navbar {
   background-color: var(--default-color);
   padding: 40px 77px;
-}
 
-.navbar__brand {
-  border: 1px solid var(--primary-color);
-  width: 193px;
-  height: 60px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .navbar__brand {
+    border: 1px solid var(--primary-color);
+    width: 193px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  span {
-    color: var(--primary-color);
-    font-size: 30px;
+    span {
+      color: var(--primary-color);
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 834px) {
+    .navbar__brand {
+      margin: 0 auto;
+    }
   }
 }

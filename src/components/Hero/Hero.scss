@@ -10,8 +10,20 @@
     color: var(--primary-color);
     line-height: 5.86rem;
     font-weight: 700;
-    width: 490px;
+    width: 29.375rem;
     padding: 109px 77px;
     display: inline-block;
+  }
+
+  @media screen and (max-width: 834px) {
+    text-align: center !important;
+  }
+
+  @media screen and (max-width: 321px) {
+    .hero__title {
+      font-size: 28px;
+      width: 290px;
+      line-height: 1.86rem;
+    }
   }
 }
